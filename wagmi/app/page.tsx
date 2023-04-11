@@ -1,7 +1,7 @@
 import React from "react";
-import RpcProviderExample from "./components/ether/Ether";
-import WagmiGoogleExample from "./components/wagmi/Wagmi";
-import ConnectKitExample from "./components/connectkit/ConnectKit";
+import RpcProviderExample from "../components/ether/Ether";
+import WagmiGoogleExample from "../components/wagmi/Wagmi";
+import ConnectKitExample from "../components/connectkit/ConnectKit";
 
 const page = () => {
   return (
