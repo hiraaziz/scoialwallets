@@ -16,24 +16,26 @@ import { publicProvider } from "wagmi/providers/public";
 import { createClient } from "wagmi";
 import { RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 function RainbowKitExample() {
+  const projectId =
+    "BDnXx3nIoms1zqtd4z6B1ud4zCE261GoMcPb0LP4QI4lA2J1Q60esCWm_XZri-AVSFOHKY2cE620zU57aasRxYQ";
   const connectors = connectorsForWallets([
     {
       groupName: "Social",
       wallets: [
         googleWallet({
-          options: { projectId: "1cd7f081-0a48-4038-9f30-743067be10b8" },
+          options: { projectId: projectId },
         }),
         facebookWallet({
-          options: { projectId: "1cd7f081-0a48-4038-9f30-743067be10b8" },
+          options: { projectId: projectId },
         }),
         githubWallet({
-          options: { projectId: "1cd7f081-0a48-4038-9f30-743067be10b8" },
+          options: { projectId: projectId },
         }),
         discordWallet({
-          options: { projectId: "1cd7f081-0a48-4038-9f30-743067be10b8" },
+          options: { projectId: projectId },
         }),
         twitterWallet({
-          options: { projectId: "1cd7f081-0a48-4038-9f30-743067be10b8" },
+          options: { projectId: projectId },
         }),
       ],
     },
