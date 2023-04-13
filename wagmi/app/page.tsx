@@ -2,6 +2,7 @@ import React from "react";
 import RpcProviderExample from "../components/ether/Ether";
 import WagmiGoogleExample from "../components/wagmi/Wagmi";
 import ConnectKitExample from "../components/connectkit/ConnectKit";
+import RainbowKitExample from "@/components/rainbow/page";
 
 const page = () => {
   return (
@@ -23,6 +24,10 @@ const page = () => {
         <div className="p-4 shadow-md w-[320px] md:w-[500px] h-36 rounded-sm flex flex-col justify-between items-center">
           <h1 className="font-bold text-xl">Connect Kit</h1>
           <ConnectKitExample />
+        </div>
+        <div className="p-4 shadow-md w-[320px] md:w-[500px] h-36 rounded-sm flex flex-col justify-between items-center">
+          <h1 className="font-bold text-xl">Rainbow Kit</h1>
+          <RainbowKitExample />
         </div>
       </div>
     </div>
