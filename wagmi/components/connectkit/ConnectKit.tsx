@@ -27,11 +27,15 @@ function ConnectKitExample() {
   const options = {
     options: { projectId: "1cd7f081-0a48-4038-9f30-743067be10b8" },
   };
-
+  const { chains, provider, webSocketProvider } = configureChains(
+    [polygonMumbai],
+    [publicProvider()]
+  );
   const client = createClient(
     getDefaultClient({
       appName: "Your App Name",
       chains: [polygonMumbai],
+      provider,
       connectors: [
         new GoogleSocialWalletConnector(options),
         new FacebookSocialWalletConnector(options),
