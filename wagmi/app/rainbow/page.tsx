@@ -1,4 +1,5 @@
 "use client";
+import "@rainbow-me/rainbowkit/styles.css";
 import {
   googleWallet,
   facebookWallet,
@@ -46,13 +47,22 @@ function RainbowKitExample() {
     autoConnect: false,
     connectors,
     provider,
-    webSocketProvider,
   });
 
   return (
     <WagmiConfig client={client}>
-      <RainbowKitProvider chains={chains} modalSize={"compact"}>
-        <ConnectButton />
+      <RainbowKitProvider chains={chains}>
+        <div
+          style={{
+            width: "100vw",
+            height: "100vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <ConnectButton />
+        </div>
       </RainbowKitProvider>
     </WagmiConfig>
   );
